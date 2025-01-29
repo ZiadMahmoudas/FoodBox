@@ -1,0 +1,115 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    .collect{
+        .swap-nav{
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            .navbar-collapse{
+                  flex-grow: 0;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    top: 80%;
+                    background-color: #5D50C6;
+                    border-radius: 10px;
+                    padding-left: 32px;
+                }
+            }
+        }
+        .nav-icons{
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+        }
+    }
+
+@include min(mobile){
+    .navbar{
+        .collect{
+            .swap-nav{
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row wrap;
+                width: calc(100% - 99px);  
+            }
+        }
+    }
+}
+
+@include min(tablet){
+    .navbar{
+        .collect{
+            .swap-nav{
+                width: calc(100% - 77px);
+            }
+        }
+    }
+}
+
+@include min(big-tablet){
+    .navbar{
+        .collect{
+            .swap-nav{
+                display: flex;
+                        justify-content: space-between;
+                        flex-flow: row nowrap;
+                        width: calc(100% - 220px);
+            }
+        }
+}
+}
+
+
+
+ <section class="sec2 pt-5 text-center ">
+       <h2>Top Categories</h2>
+     <div class="container Top d-flex flex-column align-items-center flex-sm-row flex-lg-row">
+        <div class="row Categories  ">
+         <div class="gallary   d-flex flex-column align-items-center">
+          <img src="img/Frame 12 (1).svg" class="img-fluid" alt="">
+          <small>Fast Food</small>
+         </div>
+         <div class="gallary  mt-4 mt-md-0 d-flex flex-column align-items-center">
+          <img src="img/Frame 12.svg" alt="">
+          <small>Salad</small>
+         </div>
+         <div class="gallary mt-4 mt-md-0 d-flex flex-column align-items-center">
+          <img src="img/Frame 12 (3).svg" alt="">
+          <small>Cocktail</small>
+         </div>
+         <div class="gallary mt-4 mt-md-0 d-flex flex-column align-items-center">
+          <img src="img/Frame 12 (4).svg" alt="">
+          <small>Cocktail</small>
+         </div>
+         <div class="gallary mt-4 mt-md-0 d-flex flex-column align-items-center">
+          <img src="img/Frame 12 (5).svg" alt="">
+          <small>Chinese</small>
+         </div>
+        </div>
+        <div class="row Food">
+            <div class="gallary  d-flex flex-column align-items-center">
+                <img src="img/Frame 12 (1).svg" class="img-fluid" alt="">
+                <small>Fast Food</small>
+               </div>
+               <div class="gallary mt-4 d-flex flex-column align-items-center">
+                <img src="img/Frame 12 (5).svg" alt="">
+                <small>Chinese</small>
+               </div>
+               <div class="gallary mt-4 d-flex flex-column align-items-center">
+                <img src="img/Frame 12 (5).svg" alt="">
+                <small>Cocktail</small>
+               </div>
+               <div class="gallary mt-4 d-flex flex-column align-items-center">
+                <img src="img/Frame 12.svg" alt="">
+                <small>Salad</small>
+               </div>
+               <div class="gallary mt-4 d-flex flex-column align-items-center">
+                <img src="img/Frame 12 (1).svg" alt="">
+                <small>Fast Food</small>
+               </div>
+        </div>
+     </div>
+   </section>

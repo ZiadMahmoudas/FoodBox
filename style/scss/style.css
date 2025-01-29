@@ -1,0 +1,790 @@
+.red-btn {
+  background-color: #FF2626;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  color: #ffffff;
+  border-radius: 99px;
+}
+
+.white-btn {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  color: #171717;
+  background-color: #ffffff;
+  border-radius: 99px;
+}
+
+.Order, .demo {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: SemiBold;
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Medium;
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Regular;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: SemiBold;
+  src: url(../../fonts/Poppins-SemiBold.ttf);
+}
+header .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+header .navbar .collect .swap-nav {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .navbar .collect .swap-nav .navbar-brand {
+  margin-right: 0;
+}
+header .navbar .collect .swap-nav .navbar-collapse {
+  flex-grow: 0;
+  flex-basis: 100%;
+  position: absolute;
+  top: 100%;
+  width: 95%;
+  border-radius: 10px;
+  padding-block: 10px;
+  background-color: #FFCECE;
+}
+header .navbar .collect .swap-nav .navbar-collapse .navbar-nav {
+  padding-left: 25px;
+  gap: 5px;
+}
+header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li:nth-child(5), header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li:nth-child(6) {
+  display: flex;
+  gap: 2px;
+}
+header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li:nth-child(5) a, header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li:nth-child(6) a {
+  background-color: #171717;
+  border-radius: 50%;
+  padding-inline: 9px;
+  padding-block: 7px;
+  text-align: center;
+}
+header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Medium;
+  color: #000;
+  position: relative;
+  transition: color 0.4s ease-in-out;
+}
+header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link:hover, header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link:focus {
+  color: #FF2626;
+}
+header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link:hover::after, header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link:focus::after {
+  width: 95%;
+}
+header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 0;
+  background-color: #171717;
+  height: 4px;
+  transition: width 0.3s ease-in-out;
+  width: 0%;
+}
+header .navbar .collect .swap-nav .navbar-toggler {
+  border: none;
+  box-shadow: none;
+  background-color: #171717;
+  border-radius: 50%;
+  padding-block: 10px;
+  padding-inline: 12px;
+}
+header .navbar .collect .swap-nav .navbar-toggler:hover {
+  background-color: rgba(21, 227, 21, 0.621);
+}
+header .navbar .collect .swap-nav .navbar-toggler i {
+  font-size: 32px;
+}
+header .navbar .nav-icons {
+  display: none;
+}
+header .navbar .nav-icons a {
+  background-color: #171717;
+  border-radius: 50%;
+  padding-block: 5px;
+  padding-inline: 8px;
+}
+header .sec {
+  position: relative;
+  padding-top: 100px;
+}
+header .sec .graident-color, header .sec .graident-colo {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  filter: blur(150px);
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #FF9999, #FFFFFF);
+  top: -40%;
+  z-index: -1;
+}
+header .sec .graident-colo {
+  width: 50%;
+  left: 50%;
+  top: -20%;
+}
+header .sec .Senses {
+  gap: 4px;
+}
+header .sec .Senses .Feast {
+  gap: 1.5rem;
+}
+header .sec .Senses .Feast small {
+  padding-block: 1.5rem;
+  width: 56%;
+  text-align: center;
+  background-color: #FFCECE;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Medium;
+  color: #FF2626;
+  border-radius: 6.1875rem;
+}
+header .sec .Senses .Feast h1 {
+  line-height: 44.8px;
+  font-family: SemiBold;
+}
+header .sec .Senses .Feast h1 span {
+  color: #FF2626;
+}
+header .sec .Senses .Feast p {
+  color: #888888;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-family: Medium;
+}
+header .sec .Senses .Feast ul {
+  gap: 4rem;
+  flex-direction: column;
+  width: 90%;
+}
+header .sec .Senses .Feast ul li .demo:hover {
+  background-color: pink;
+}
+header .sec .Senses .Feast ul li .Order, header .sec .Senses .Feast ul li .demo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s ease-out;
+}
+header .sec .Senses .Feast ul li .Order .icon, header .sec .Senses .Feast ul li .demo .icon {
+  background-color: red;
+  border-radius: 50%;
+  padding-inline: 10px;
+  padding-block: 8px;
+}
+
+main h3 {
+  font-size: 24px;
+  line-height: 81px;
+  font-family: SemiBold;
+}
+main .sec2 .Categories {
+  gap: 32px;
+  padding-top: 8px;
+}
+main .sec2 .Categories :nth-child(5), main .sec2 .Categories :nth-child(6), main .sec2 .Categories :nth-child(7), main .sec2 .Categories :nth-child(8), main .sec2 .Categories :nth-child(9), main .sec2 .Categories :nth-child(10) {
+  display: none;
+}
+main .sec2 .Categories .gallary {
+  border: 1px solid #000000;
+  padding-inline: 81px;
+  padding-block: 64px;
+  gap: 3rem;
+  border-radius: 32px;
+  transition: all 0.4s ease-in-out;
+}
+main .sec2 .Categories .gallary small {
+  font-size: 14px;
+  line-height: 36px;
+  font-family: SemiBold;
+}
+main .sec2 .Categories .gallary:hover {
+  background-color: #FF2626;
+  filter: drop-shadow(0 10px 32px rgba(255, 38, 38, 0.5019607843));
+}
+main .sec2 .Categories .gallary:hover small {
+  color: white;
+}
+main .sec3 {
+  padding-inline: 24px;
+}
+main .sec3 .best {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+main .sec3 .cover {
+  transition: all 0.5s ease-in;
+}
+main .sec3 .cover:hover {
+  filter: brightness(120%);
+}
+main .sec3 .season {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .sec3 .season h3 {
+  font-size: 24px;
+  line-height: 33.6px;
+  font-family: bold;
+  color: #171717;
+}
+main .sec3 .season p {
+  font-size: 16px;
+  font-family: Medium;
+  line-height: 24px;
+  color: #888888;
+}
+main .sec3 .season .Now {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+main .sec4 h2 {
+  line-height: 28.8px;
+  font-family: Bold;
+  font-size: 24px;
+}
+main .sec4 .offer div {
+  background-color: #FFCECE;
+  border-radius: 99px;
+  width: 21%;
+  align-self: center;
+}
+main .sec4 .offer h4 {
+  line-height: 36px;
+  font-size: 24px;
+  font-family: SemiBold;
+  color: #000000;
+}
+main .sec4 .offer p {
+  font-family: Medium;
+  line-height: 24px;
+  font-size: 14px;
+  color: #888888;
+}
+main .sec5 {
+  padding-inline: 24px;
+  gap: 0.625rem;
+}
+main .sec5 .collect {
+  gap: 64px;
+}
+main .sec5 .collect .pic1 {
+  top: 85%;
+  left: 18%;
+}
+main .sec5 .collect .pic2 {
+  top: 85%;
+  left: 35%;
+}
+main .sec5 .collect .pic3 {
+  top: 85%;
+  left: 54%;
+}
+main .sec5 .collect .pic4 {
+  top: 85%;
+  left: 72%;
+}
+main .sec5 .Reviews h3 {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-family: Bold;
+}
+main .sec5 .Reviews p {
+  font-family: Regular;
+  line-height: 40px;
+  color: #888888;
+}
+main .sec6 {
+  display: flex;
+  gap: 10px;
+  padding-inline: 1.5rem;
+}
+main .sec6 .mobile {
+  background-color: #171717;
+  border-radius: 32px;
+  padding-inline: 55px;
+  padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .sec6 .mobile .iphone {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+main .sec6 .mobile .iphone h3 {
+  line-height: 38.4px;
+  font-size: 24px;
+  font-family: Bold;
+  color: #ffffff;
+}
+main .sec6 .mobile .iphone .App {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+footer .sec7 {
+  padding-inline: 24px;
+}
+footer .sec7 .ALL {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+footer .sec7 .ALL .destination {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+footer .sec7 .ALL .destination p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Medium;
+}
+footer .sec7 .magic {
+  display: none;
+}
+footer .sec7 .accor {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer .sec7 .accor .accordion {
+  --bs-accordion-btn-icon-transform: rotate(-0deg);
+  --bs-accordion-active-bg: none;
+  --bs-accordion-border-width: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer .sec7 .accor .accordion-item .accordion-button {
+  color: #000;
+  font-size: 16px;
+  line-height: 36px;
+  font-family: SemiBold;
+}
+footer .sec7 .accor .accordion-item .accordion-button:hover, footer .sec7 .accor .accordion-item .accordion-button:focus {
+  --bs-accordion-active-bg: pink;
+}
+footer .sec7 .accor .accordion-item .accordion-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 0;
+}
+footer .sec7 .accor .accordion-item .accordion-body ul li a {
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  line-height: 24px;
+  font-family: Medium;
+}
+footer .sec7 .accor .accordion-item .accordion-body ul li a:hover {
+  color: #FF9999;
+}
+footer .sec7 .social {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+footer .sec7 .social .media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .sec7 .social .media a {
+  background-color: #FFCECE;
+  border-radius: 99px;
+  padding-inline: 18px;
+  padding-block: 14px;
+  color: #171717;
+}
+footer .sec7 .social .media a i {
+  font-size: 24px;
+}
+footer .sec7 .social p {
+  font-size: 12px;
+  line-height: 24px;
+  font-family: Medium;
+}
+
+@media (min-width: 576px) {
+  header .navbar .collect {
+    min-width: 589px;
+  }
+  header .navbar .collect .swap-nav {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  header .navbar .collect .swap-nav .navbar-collapse {
+    width: auto;
+    position: static;
+    background-color: transparent;
+    flex-basis: auto;
+  }
+  header .navbar .collect .swap-nav .navbar-collapse .navbar-nav {
+    gap: 2rem;
+  }
+  header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li:nth-child(5), header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li:nth-child(6) {
+    display: none;
+  }
+  header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link:focus::after, header .navbar .collect .swap-nav .navbar-collapse .navbar-nav li .nav-link:hover::after {
+    width: 100%;
+  }
+  header .navbar .collect .nav-icons {
+    display: flex;
+    gap: 16px;
+  }
+  header .sec .Senses .Feast h1 {
+    line-height: 113.4px;
+    font-size: 62px;
+  }
+  header .sec .Senses .Feast ul {
+    padding-left: 0;
+  }
+  main .sec2 .Categories :nth-child(5), main .sec2 .Categories :nth-child(6), main .sec2 .Categories :nth-child(7), main .sec2 .Categories :nth-child(8), main .sec2 .Categories :nth-child(9), main .sec2 .Categories :nth-child(10) {
+    display: block;
+  }
+  main .sec2 .Categories .gallary {
+    padding-inline: 61px;
+    padding-block: 76px;
+  }
+  main .sec3 .season {
+    gap: 32px;
+  }
+  main .sec3 .season h3 {
+    font-size: 54px;
+    line-height: 81px;
+  }
+  main .sec3 .season .Now {
+    justify-content: flex-start;
+    width: 35%;
+    gap: 15px;
+  }
+  main .sec5 .photo {
+    width: 88%;
+  }
+  main .sec5 .photo .box-color {
+    background-color: #FF2626;
+    border-radius: 32px;
+    width: 50%;
+    left: -5%;
+    top: -10%;
+    height: 80%;
+    z-index: -5;
+  }
+  main .sec6 .mobile {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-block: 48px;
+    gap: 0;
+    padding-inline: 0;
+  }
+  footer .sec7 .ALL .destination {
+    gap: 64px;
+    align-items: flex-start;
+  }
+  footer .sec7 .accor {
+    display: none;
+  }
+  footer .sec7 .magic {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .sec7 .magic ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  footer .sec7 .magic ul h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: SemiBold;
+  }
+  footer .sec7 .magic ul a {
+    color: #171717;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: Medium;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .sec7 .magic ul a:hover {
+    color: #FF9999;
+  }
+}
+@media (min-width: 768px) {
+  header .navbar .collect .swap-nav {
+    width: 82%;
+    justify-content: space-around;
+  }
+  header .navbar .collect .swap-nav .navbar-collapse .navbar-nav {
+    gap: 2rem;
+  }
+  header .sec .Senses .Feast h1 {
+    line-height: 113.4px;
+    font-size: 68px;
+  }
+  header .sec .Senses .Feast ul {
+    padding-left: 0;
+  }
+  header .sec .Senses .Feast ul li .Order {
+    gap: 6px;
+  }
+  main .sec2 {
+    overflow-x: hidden;
+    align-items: center !important;
+  }
+  main .sec2 .Categories {
+    justify-content: unset !important;
+    flex-wrap: nowrap;
+  }
+  main .sec2 .Categories :nth-child(6), main .sec2 .Categories :nth-child(7), main .sec2 .Categories :nth-child(8), main .sec2 .Categories :nth-child(9), main .sec2 .Categories :nth-child(10) {
+    display: block;
+  }
+  main .sec2 .Categories .gallary {
+    padding-inline: 53px;
+    padding-block: 56px;
+    width: 39%;
+  }
+  main .sec2 .Categories .gallary small {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: SemiBold;
+  }
+  main .forget {
+    display: none;
+  }
+  main .sec3 .best {
+    flex-direction: row-reverse;
+  }
+  main .sec3 .best .cover {
+    min-width: 34%;
+  }
+  main .sec3 .best .season .Now {
+    padding-inline: 20px;
+    justify-content: center;
+  }
+  main .sec4 .offer div {
+    width: auto;
+  }
+  main .sec4 .line {
+    position: relative;
+  }
+  main .sec4 .line::after {
+    content: "";
+    position: absolute;
+    width: 19%;
+    top: 20%;
+    left: 24%;
+    border-top: 1px dashed rgba(77, 1, 77, 0.74);
+  }
+  main .sec4 .line::before {
+    content: "";
+    position: absolute;
+    width: 19%;
+    top: 20%;
+    left: 57%;
+    border-top: 1px dashed rgba(77, 1, 77, 0.74);
+  }
+  main .sec5 {
+    padding-inline: 96px;
+  }
+  main .sec5 .collect {
+    gap: 97px;
+    align-items: center;
+  }
+  main .sec5 .collect .col-md-6 {
+    width: 50%;
+  }
+  main .sec5 .collect .Reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  main .sec5 .collect .pic1 {
+    top: 84%;
+    left: 18%;
+  }
+  main .sec5 .collect .pic2 {
+    top: 84%;
+    left: 35%;
+  }
+  main .sec5 .collect .pic3 {
+    top: 84%;
+    left: 54%;
+  }
+  main .sec5 .collect .pic4 {
+    top: 84%;
+    left: 72%;
+  }
+  main .sec5 .photo .box-color {
+    width: 70%;
+    left: 40%;
+    top: -10%;
+    height: 70%;
+    z-index: -5;
+  }
+  main .sec6 .mobile {
+    justify-content: space-evenly;
+  }
+  footer .sec7 .ALL {
+    flex-direction: row;
+  }
+  footer .sec7 .ALL .destination {
+    width: 53%;
+  }
+  footer .sec7 .magic {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar {
+    position: fixed;
+    width: 100%;
+  }
+  header .navbar .collect .swap-nav {
+    width: 63%;
+    justify-content: space-between;
+  }
+  header .navbar .collect .swap-nav .navbar-collapse {
+    justify-content: flex-end;
+  }
+  header .navbar .collect .swap-nav .navbar-collapse .navbar-nav {
+    gap: 2rem;
+  }
+  main .sec2 {
+    overflow-x: hidden;
+    align-items: center !important;
+  }
+  main .sec2 .Categories {
+    justify-content: unset !important;
+    flex-wrap: nowrap;
+  }
+  main .sec2 .Categories :nth-child(3) {
+    display: block !important;
+  }
+  main .sec2 .Categories .gallary {
+    padding-inline: 81px;
+    padding-block: 96px;
+    width: 23%;
+  }
+  main .sec2 .Categories .gallary small {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: SemiBold;
+  }
+  main .forget {
+    display: none;
+  }
+  main .sec3 {
+    align-items: center;
+  }
+  main .sec3 .best .cover {
+    min-width: 43%;
+  }
+  main .sec5 .photo {
+    width: 100%;
+  }
+  main .sec5 .photo .box-color {
+    width: 60%;
+    left: 50%;
+    top: -10%;
+    height: 90%;
+    z-index: -5;
+  }
+  footer .sec7 .ALL {
+    flex-direction: row;
+  }
+  footer .sec7 .ALL .destination {
+    width: 53%;
+  }
+  footer .sec7 .magic {
+    width: 57%;
+  }
+}
+span {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+html html {
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFCECE;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FF2626;
+}
+
+::-webkit-scrollbar {
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.white-link {
+  font-family: Bold;
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+
+.black-link {
+  color: #171717;
+  font-size: 14px;
+  line-height: 1.5rem;
+  font-family: Bold;
+}/*# sourceMappingURL=style.css.map */

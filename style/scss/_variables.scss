@@ -1,0 +1,14 @@
+@use "map" as*;
+@use "fonts" as *;
+.white-link{
+    font-family: Bold;
+    font-size: map-get($fonts, "14" );
+    line-height: 1.5rem;
+    color: map-get($theme-color, "white" );
+}
+.black-link{
+    color: map-get($theme-color, "black" );
+    font-size: map-get($fonts, "14" );
+    line-height: 1.5rem;
+    font-family: Bold;
+}

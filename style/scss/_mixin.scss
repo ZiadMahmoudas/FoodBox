@@ -1,0 +1,29 @@
+@use "map" as *;
+
+@mixin max($point){
+    @each $name , $value in $point{
+        @if map-has-key($points, $point ){
+         $value:map-get($points, $point);
+           @media(max-width:$value){
+            @content;
+           }
+        }
+        @else{
+            @error "please enter your correct #{$name}"
+        }
+}
+}
+
+@mixin min($point){
+    @each $name , $value in $point{
+        @if map-has-key($points, $point ){
+         $value:map-get($points, $point);
+           @media(min-width:$value){
+            @content;
+           }
+        }
+        @else{
+            @error "please enter your correct #{$name}"
+        }
+}
+}
